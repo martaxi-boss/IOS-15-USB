@@ -1,0 +1,10 @@
+Archive bootstrap toolchain - 2026-09-25
+GNU ar (GNU Binutils for Debian) 2.44
+Debian 'dpkg-deb' package archive backend version 1.22.22 (amd64).
+GNU strings (GNU Binutils for Debian) 2.44
+file-5.46
+LLVM (http://llvm.org/):
+  LLVM version 17.0.0
+plutil: Swift toolchain plutil
+lipo: NOT INSTALLED; file/llvm-objdump used as read-only equivalent.
+otool: NOT INSTALLED; llvm-objdump Mach-O modes used as read-only equivalent.

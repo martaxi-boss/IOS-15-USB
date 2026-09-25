@@ -1,0 +1,10 @@
+lipo is not installed in this analysis environment.
+Read-only equivalent evidence from file(1) and llvm-objdump Mach-O header:
+/mnt/data/IOS-15-USB-bootstrap-stage/recovered/VCamRecovered.dylib: Mach-O 64-bit arm64 dynamically linked shared library, flags:<NOUNDEFS|DYLDLINK|TWOLEVEL|NO_REEXPORTED_DYLIBS>
+/mnt/data/IOS-15-USB-bootstrap-stage/recovered/VCamRecovered.dylib:
+Mach header
+      magic cputype cpusubtype  caps    filetype ncmds sizeofcmds      flags
+MH_MAGIC_64   ARM64        ALL  0x00       DYLIB    35       4312   NOUNDEFS DYLDLINK TWOLEVEL NO_REEXPORTED_DYLIBS
+Load command 0
+      cmd LC_SEGMENT_64
+  cmdsize 872

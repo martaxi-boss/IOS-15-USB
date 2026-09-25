@@ -1,0 +1,17 @@
+sha256sum 'original/ios 15 usb.deb'
+ar t 'original/ios 15 usb.deb'
+(cd raw-ar && ar x '../original/ios 15 usb.deb')
+dpkg-deb -R 'original/ios 15 usb.deb' 'extracted/package'
+find 'extracted/package' -printf '%y %P\n' | LC_ALL=C sort
+cp -p extracted/package/var/jb/Library/MobileSubstrate/DynamicLibraries/VCamRecovered.dylib recovered/VCamRecovered.dylib
+cp -p extracted/package/var/jb/Library/MobileSubstrate/DynamicLibraries/VCamRecovered.plist recovered/VCamRecovered.plist
+cp -p extracted/package/var/jb/var/mobile/Library/Preferences/com.if-she.cydia.vcam.plist recovered/preferences/com.if-she.cydia.vcam.plist
+/usr/bin/strings -a recovered/VCamRecovered.dylib
+/usr/local/swift/usr/bin/llvm-objdump --macho --syms recovered/VCamRecovered.dylib
+grep '\*UND\*' analysis/symbols/VCamRecovered.nm.txt
+file recovered/VCamRecovered.dylib
+/usr/local/swift/usr/bin/llvm-objdump --macho --private-headers recovered/VCamRecovered.dylib
+/usr/local/swift/usr/bin/llvm-objdump --macho --dylibs-used recovered/VCamRecovered.dylib
+/usr/local/swift/usr/bin/llvm-objdump --macho --disassemble-all recovered/VCamRecovered.dylib
+/usr/local/swift/usr/bin/plutil -p recovered/preferences/com.if-she.cydia.vcam.plist
+sha256sum <archive files>

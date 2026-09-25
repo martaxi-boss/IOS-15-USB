@@ -1,0 +1,15 @@
+d 
+d DEBIAN
+d var
+d var/jb
+d var/jb/Library
+d var/jb/Library/MobileSubstrate
+d var/jb/Library/MobileSubstrate/DynamicLibraries
+d var/jb/var
+d var/jb/var/mobile
+d var/jb/var/mobile/Library
+d var/jb/var/mobile/Library/Preferences
+f DEBIAN/control
+f var/jb/Library/MobileSubstrate/DynamicLibraries/VCamRecovered.dylib
+f var/jb/Library/MobileSubstrate/DynamicLibraries/VCamRecovered.plist
+f var/jb/var/mobile/Library/Preferences/com.if-she.cydia.vcam.plist

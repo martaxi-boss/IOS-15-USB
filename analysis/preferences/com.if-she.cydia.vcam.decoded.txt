@@ -1,0 +1,5 @@
+{
+  "auth_token" => "bypass_active"
+  "logged_in" => true
+  "username" => "admin"
+}

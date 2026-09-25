@@ -1,0 +1,6 @@
+Package: com.vcam.universal
+Name: VCam Universal Patch
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Depends: mobilesubstrate
+Description: Bypass universal para VCam
